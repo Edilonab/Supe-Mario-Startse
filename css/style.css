@@ -26,7 +26,7 @@
     bottom: 0;
 }
 
-.clauds-game {
+.cloud-game {
     position: absolute;
     width: 550px;
     animation: clouds-animation 20s infinite linear;
@@ -47,7 +47,12 @@
 }
 
 @keyframes clouds-animation {
-
+    from{
+        right: -550px;
+    }
+    to{
+        right: 100%;
+    }
 }
 
 @keyframes mario-animation {
@@ -56,7 +61,12 @@
     }
     40% {bottom: 180px;
     }
-    50% {bottom:180px
+    50% {bottom:180px;
     }
-    60% {bottom:180px
+    60% {bottom:180px;
     }
+    70% {bottom:180px;
+    }
+    100% {bottom: 0;
+    }
+}
