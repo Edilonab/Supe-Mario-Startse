@@ -6,7 +6,7 @@ const jump = () => {
 
     setTimeout(()=> {
         mario.classList.remove("jump-mario");
-    }, 505);
+    }, 905);
 };
 
 const loopGame = setInterval(()=> {
@@ -16,21 +16,21 @@ const loopGame = setInterval(()=> {
         .bottom.replace("px", "");
 
     if (pipePosition <= 120 && pipePosition > 0 && marioPosition < 80) {
-    pipe.style.animation = "none";
-    pipe.style.left = `${pipePosition}px`;
+        pipe.style.animation = "none";
+        pipe.style.left = `${pipePosition}px`;
 
-    mario.style.animation = "none";
-    mario.style.bottom = `${marioPosition}px`;
+        mario.style.animation = "none";
+        mario.style.bottom = `${marioPosition}px`;
 
-    mario.src = "./Imagens/mario-game-over.png";
-    mario.style.width = "75px";
-    mario.style.marginLeft = "42px";
+        mario.src = "./Imagens/mario-game-over.png";
+        mario.style.width = "75px";
+        mario.style.marginLeft = "42px";
 
-    clearInterval(loopGame)
+     clearInterval(loopGame)
 
     }
 
-}, 10);
+}, 90);
 
 document.addEventListener("click", jump);
 document.addEventListener("keydown", jump);
