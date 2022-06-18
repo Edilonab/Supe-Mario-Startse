@@ -24,7 +24,7 @@ const loopGame = setInterval(()=> {
 
     mario.src = "./Imagens/mario-game-over.png";
     mario.style.width = "75px";
-    mario.style.marginLeft = "45px";
+    mario.style.marginLeft = "42px";
 
     clearInterval(loopGame)
 
@@ -33,3 +33,4 @@ const loopGame = setInterval(()=> {
 }, 10);
 
 document.addEventListener("click", jump);
+document.addEventListener("keydown", jump);
